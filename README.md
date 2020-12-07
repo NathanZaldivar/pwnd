@@ -21,7 +21,11 @@ Files: python3 pwnd.py -f
 
 1:) install the requests module using: pip3 install requests
 
-2:) download pwnd.py and run
+2:) download pwnd.py
+
+2:) grab a API key from https://haveibeenpwned.com/API/Key and open pwnd.py with a text editor, notepad will work. You will see a dictionary with a string 'API KEY GOES HERE', replace the text inside the quotation marks with the key, save the file and close the text editor. 
+
+4:) run and enjoy
 
 **Module use:**
 
