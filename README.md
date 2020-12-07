@@ -14,9 +14,9 @@ _modules:_ The requests module is required for pwnd.
 
 **Use:**
 
-Syntax: python3 pwnd.py <email1> <email2> <email3>
+Syntax: python3 pwnd.py email1 email2 email3
 
-Files: python3 pwnd.py -f <path to email>
+Files: python3 pwnd.py -f /path/to/file
 
 **Installation:**
 
