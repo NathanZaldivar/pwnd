@@ -22,7 +22,6 @@ def single(email):
 #multiple api calls
 def multiple(email):
     breach = []
-    ERROR = []
     for i in email:
         if re.match(r'[^@]+@[^@]+\.[^@]+', i):
             time.sleep(1.6) # rate limit
@@ -30,16 +29,15 @@ def multiple(email):
             if r.text != '':
                 breach.extend([f'Email {i} found in {x} breach' for x in r.text.replace('[', '').replace(']', '').replace('{', '').replace('}', '').replace('"', '').replace('Name:', '').split(',')])
         else:
-            ERROR.append('invalid email for option: {}'.format(i))
+            breach.append('invalid email for option: {}'.format(i))
             continue
-    breach.extend(ERROR)
+    breach
     return breach
 
 
 #api call for files
 def file(email):
     try:
-        ERROR = []
         breach = []
         with open(email) as emails:
             for y in emails.readlines():
@@ -50,9 +48,9 @@ def file(email):
                     if r.text != '':
                         breach.extend([f'Email {i} found in {x} breach' for x in r.text.replace('[', '').replace(']', '').replace('{', '').replace('}', '').replace('"', '').replace('Name:', '').split(',')])
                 else:
-                    ERROR.append('invalid email for option: {}'.format(i))
+                    breach.append('invalid email for option: {}'.format(i))
                     continue
-        breach.extend(ERROR)
+        breach
         return breach
     except FileNotFoundError:
         return 'File not found'
