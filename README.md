@@ -24,9 +24,11 @@ Files: python3 pwnd.py -f /path/to/file
 
 2:) download pwnd.py
 
-2:) grab a API key from https://haveibeenpwned.com/API/Key and open pwnd.py with a text editor, notepad will work. You will see a dictionary with a string 'API KEY GOES HERE', replace the text inside the quotation marks with the key, save the file and close the text editor. 
+3:) grab a API key from https://haveibeenpwned.com/API/Key 
 
-4:) run and enjoy
+4:) open pwnd.py with a text editor, notepad will work. You will see a dictionary with a string 'API KEY GOES HERE', replace the text inside the quotation marks with the key, save the file and close the text editor. 
+
+5:) run and enjoy
 
 **Module use:**
 
