@@ -36,7 +36,7 @@ def multiple(email):
     return breach
 
 
-#api calls for file
+#api call for files
 def file(email):
     try:
         ERROR = []
