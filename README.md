@@ -1,45 +1,35 @@
 # pwnd
+Description:
+pwnd is a tool used for checking if an email is in a password breach. This tool was built using Troy Hunts Have I been pwnd? API.
 
-**Description:**
-pwnd is a tool used for checking if an email is in a password breach. This tool was built using Troy Hunts Have i been pwnd? API.
+Requirements:
 
+in order to use this tool, you must acquire an API key from have I been pwnd Website costing US$3.50 per month.
 
-**Requirements:**
+Link: https://haveibeenpwned.com/API/Key
 
-in order to use this tool you must aquire a API key from have i been pwnd Website costing US$3.50 per month.
+modules: The requests module is required for pwnd.
 
-_Link:_ 
-https://haveibeenpwned.com/API/Key
+Use:
 
-_modules:_
-The requests module is required for pwnd.
+Syntax: python3 pwnd.py Files: python3 pwnd.py -f
 
+Installation:
 
-**Use:**
+1:) install the requests module using: pip3 install requests
 
-Syntax: python3 pwnd.py <email1> <email2> <email3>
-Files: python3 pwnd.py -f <file path>
- 
+2:) download pwnd.py and run
 
-
-**Installation:**
-
-1:)
-install the requests module using: pip3 install requests
-
-2:)
-download pwnd.py and run
-
-**Module use:**
+Module use:
 
 pwnd.single('random@email.com'):
 
 searches only one email. returns a list.
 
-pwnd.mutiple(['email1@email.com', 'email2@email.com']):
+pwnd.multiple(['email1@email.com', 'email2@email.com']):
 
-mutiple takes a list emails as a parameter. returns a list.
+multiple takes a list of emails as a parameter. returns a list.
 
-pwnd.file('file name'):
+pwnd.file('filename'):
 
-takes a file containing emails, the format should be each email sepreated by a new line. returns a list.
+takes a file containing emails, the format should be each email separated by a new line. returns a list.
