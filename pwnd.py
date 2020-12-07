@@ -19,8 +19,8 @@ def single(email):
 
 
 
-#mutiple api calls
-def mutiple(email):
+#multiple api calls
+def multiple(email):
     breach = []
     ERROR = []
     for i in email:
@@ -74,7 +74,7 @@ def main():
         else:
             print(breaches)
     elif len(email) > 2:
-        breaches = mutiple(email[1:])
+        breaches = multiple(email[1:])
         if isinstance(breaches, list):
             for i in breaches:
                 print(i)
