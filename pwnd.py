@@ -31,7 +31,6 @@ def multiple(email):
         else:
             breach.append('invalid email for option: {}'.format(i))
             continue
-    breach
     return breach
 
 
@@ -50,7 +49,6 @@ def file(email):
                 else:
                     breach.append('invalid email for option: {}'.format(i))
                     continue
-        breach
         return breach
     except FileNotFoundError:
         return 'File not found'
